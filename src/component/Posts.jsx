@@ -4,7 +4,7 @@ import {
     Button,
   } from "react-bootstrap";
 import { FaArrowCircleDown,FaArrowCircleUp } from 'react-icons/fa';
-import photo from "../assets/sanjanaphoto2.png"
+import photo from "../assets/user.png"
 import {connect} from "react-redux";
 import axios from "axios";
 
@@ -67,7 +67,7 @@ class Posts extends React.Component{
             <Card.Body>
                 <div style={{display:"flex"}}>
                     <img src={photo} className="rounded-circle" style={{width:"36px", height:"36px", marginRight:"10px",marginTop:"3px"}}/>
-                        <p><span style={{fontWeight:"bold", fontSize:"small"}}>Sanjana Kumari.</span><span style={{color:"gray", fontSize:"small"}}> 1hr ago <br></br> Full stack developer </span></p> 
+                        <p><span style={{fontWeight:"bold", fontSize:"small"}}>User's Name</span><span style={{color:"gray", fontSize:"small"}}> <br></br> User's Bio </span></p> 
                 </div>
                 <Card.Title as="h6">{this.state.post.title}</Card.Title>
                 <Card.Text >
