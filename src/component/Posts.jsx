@@ -33,7 +33,7 @@ class Posts extends React.Component{
         }
     }
     async upvote(){
-        const post = await axios.post("http://localhost:5000/posts/upvote",{id:this.props.post._id,unique:this.props.uniqueid});
+        const post = await axios.post("https://voting-backend-3010.herokuapp.com/posts/upvote",{id:this.props.post._id,unique:this.props.uniqueid});
         if (post.data.msg === undefined){
             this.setState({
                 post:post.data
@@ -47,7 +47,7 @@ class Posts extends React.Component{
     }
     
     async downvote(){
-        const post = await axios.post("http://localhost:5000/posts/downvote",{id:this.props.post._id,unique:this.props.uniqueid});
+        const post = await axios.post("https://voting-backend-3010.herokuapp.com/posts/downvote",{id:this.props.post._id,unique:this.props.uniqueid});
         if (post.data.msg === undefined){
             this.setState({
                 post:post.data

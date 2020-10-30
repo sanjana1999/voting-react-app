@@ -36,7 +36,7 @@ class Addpost extends React.Component{
     }
 
     addpost(){
-        axios.post("http://localhost:5000/posts/add",this.state)
+        axios.post("https://voting-backend-3010.herokuapp.com/posts/add",this.state)
             .then(res=>{
                 console.log(res.data);
                 this.props.history.push('/home')

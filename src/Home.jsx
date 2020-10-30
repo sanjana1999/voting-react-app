@@ -22,7 +22,7 @@ class Home extends React.Component{
         if (!this.props.auth){
             this.props.history.push('/auth');
         }
-        const posts = await axios.post("http://localhost:5000/posts/all");
+        const posts = await axios.post("https://voting-backend-3010.herokuapp.com/posts/all");
         this.setState({
             posts:posts.data
         },()=>{

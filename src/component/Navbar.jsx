@@ -25,7 +25,7 @@ class HomeNavbar extends React.Component{
     signOut(){
         console.log(this.props)
         this.props.signout();
-        // this.props.history.push('/auth');
+        localStorage.removeItem("user")
         window.location.reload(false);
     }
     render(){
